@@ -1,0 +1,95 @@
+/* circles for background */
+
+.back-circle1 {
+    background-color: red;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: -2;
+    bottom: -170px;
+}
+
+.back-circle2 {
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -2;
+    top: 15%;
+    right: 70px;
+}
+
+.back-circle3 {
+    z-index: -1;
+    direction: rtl;
+    margin: 11% 0 0 30%;
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #69b6d5;
+    background-color: #56b9e0;
+}
+
+
+/* .contri-card:nth-child(1):before {
+    content: '';
+    z-index: -2;
+    direction: rtl;
+    margin: 25%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #69b6d5;
+} */
+
+.contri-card:nth-child(2):before {
+    content: '';
+    z-index: -2;
+    direction: rtl;
+    /* margin-top: 7%;
+    margin-left: 27%; */
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.contri-card:nth-child(4):before {
+    content: '';
+    bottom: 0;
+    z-index: -2;
+    right: -15px;
+    width: 150px;
+    border-radius: 1rem;
+    height: 150px;
+    position: fixed;
+    transform: rotate(45deg);
+    background-color: #69b6d5;
+}
+
+@media only screen and (max-width: 800px) {
+    .contri-card:nth-child(2):before {
+        right: 100px;
+        margin-top: 50%;
+    }
+    .contri-card:nth-child(4):before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .back-circle2 {
+        display: none;
+    }
+    .contri-card:nth-child(2):before {
+        left: -150px;
+        right: unset;
+    }
+}

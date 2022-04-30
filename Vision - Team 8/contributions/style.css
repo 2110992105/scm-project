@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* back button css */
+
+.backbtn {
+    top: 10px;
+    left: 10px;
+    color: black;
+    display: inline;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    text-decoration: none;
+}
+
+
+/* main body css */
+
+.header {
+    padding-top: 10px;
+    /* background: green; */
+}
+
+.heading {
+    text-align: center;
+    margin: 15px;
+}
+
+.contri {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* contributor card design */
+
+.contri-card {
+    width: 40%;
+    margin: 25px;
+    padding: 5px;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    backdrop-filter: blur(10px);
+    background-color: rgba(172, 161, 161, 0.285);
+    box-shadow: black 5px 7px 15px, white 2px 2px 5px;
+}
+
+
+/* contributor image div design */
+
+.contri-card .imgArea {
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+/* contributor image desing */
+
+.contri-card .imgArea img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s;
+}
+
+.contri-card .imgArea img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contri-card .info h4 {
+    margin: 10px 0;
+}
+
+.contri-card i {
+    color: black;
+    padding: 5px;
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contri-card {
+        padding: 10px;
+        display: initial;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contri-card {
+        width: 80%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contri-card {
+        display: block;
+        width: 90%;
+        overflow: auto;
+    }
+}

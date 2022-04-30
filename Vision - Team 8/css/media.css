@@ -1,0 +1,102 @@
+@media only screen and (max-width: 600px) {
+    body header {
+        text-align: center;
+        align-items: center;
+        display: flex;
+    }
+    header .vision {
+        width: 80%;
+    }
+    .header h1 {
+        text-align: center;
+    }
+    /* menu for book page css */
+    body .header_sec .header .headgenres {
+        display: inline;
+    }
+    body .header_sec .header .headgenres #menulist {
+        left: 10px;
+        display: none;
+        color: black;
+        position: absolute;
+        border-radius: 1rem;
+        border: black 2px solid;
+        background-color: white;
+        box-shadow: white 0 0 10px;
+    }
+    .menu-dropdown:hover #menulist {
+        display: block;
+        cursor: progress;
+    }
+    /* list style */
+    body .header_sec .header .headgenres ul li {
+        display: block;
+        color: black;
+    }
+    /* list links style */
+    body .header_sec .header .headgenres ul li a {
+        color: black;
+        font-weight: bold;
+    }
+    /* dropdown button style */
+    .menu-dropdown {
+        top: 25px;
+        left: 20px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        align-self: center;
+    }
+    /* middle nav bar styling over */
+    body .header_sec .header .headerrightside {
+        margin-left: 0%;
+        float: none;
+    }
+    body .header_sec .header .headerrightside input[type="search"],
+    .themes {
+        display: none;
+    }
+    body .header_sec .header .headerrightside .usericon {
+        margin-left: -32%;
+    }
+    body .header_sec .header .headerrightside .usericon .useroptions {
+        margin-left: -18%;
+    }
+    .main_sec .genre_books {
+        max-width: 95%;
+        box-sizing: border-box;
+        display: flex;
+        margin: 0 2%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main_sec .section .book {
+        width: 133px;
+    }
+    .main_sec .section .book img {
+        /* padding: 0; */
+        width: 110px;
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    body .header_sec .header .headgenres {
+        display: none;
+    }
+    body .header_sec .header .headerrightside {
+        margin-left: 30%;
+    }
+    .main_sec .genre_books {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+    body .header_sec .header .headgenres {
+        display: none;
+    }
+    body .header_sec .header .headerrightside {
+        margin-left: 47%;
+    }
+}

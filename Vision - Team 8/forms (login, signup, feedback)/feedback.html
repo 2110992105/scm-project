@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Vision | Feedback</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: white;
+            background-image: url('notext.png');
+            background-image: url('https://images.unsplash.com/photo-1600431521340-491eca880813?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGxpYnJhcnl8ZW58MHx8MHx8&w=1000&q=80');
+        }
+        
+        body .background {
+            align-items: center;
+            justify-content: center;
+            padding: 7.5% 0 7.5% 0;
+        }
+        
+        body .subback {
+            height: 80%;
+            width: 850px;
+            margin: auto;
+            display: flex;
+            background-color: white;
+            box-shadow: black 5px 7px 10px 0;
+        }
+        
+        body .background .subback .left {
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            /* border-right: black solid 0.1px; */
+        }
+        
+        body .background .subback .right {
+            width: 50%;
+            height: 100%;
+        }
+        
+        body .background .subback .right .head {
+            padding: 30px 0 0 20px;
+        }
+        
+        body .background .subback .right .form {
+            padding: 20px 0 0 20px;
+        }
+        
+        i {
+            width: 248px;
+            margin-bottom: 20px;
+            border: cyan 2px solid;
+            padding: 7px 20px 7px 20px;
+        }
+        
+        input {
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-left: 15px;
+            border-left: cyan 2px solid;
+        }
+        
+        textarea {
+            padding: 7px;
+            outline: none;
+            margin-bottom: 10px;
+            border: cyan 2px solid;
+        }
+        
+        select {
+            width: 90px;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            font-size: large;
+            margin-bottom: 20px;
+            background-color: transparent;
+        }
+        
+        button {
+            border: none;
+            width: 150px;
+            padding: 10px;
+            margin-left: 36%;
+            font-size: large;
+            background-color: cyan;
+        }
+        
+        button a {
+            color: initial;
+            text-decoration: none;
+        }
+        
+        button:hover {
+            cursor: pointer;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="subback">
+            <div class="left">
+                <img src="4.png" width="100%" height="100%" alt="" draggable="false">
+            </div>
+            <div class="right">
+                <div class="head">
+                    <h1>Feedback Form</h1>
+                    <p>Please give us your valuable Review</p>
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <p><i class="fas fa-envelope"><input type="email" name="" id="" placeholder='Enter your E-mail'></i>
+                        </p>
+                        <p><textarea name="" id="" cols="42" rows="3" placeholder="Your Message Here"></textarea></p>
+                        <p>How was your exprience&emsp;:>
+                            <select name="" id="" required>
+                                <option value="not Satisfied">Not Satisfied</option>
+                                <option value="Ok Ok">Ok Ok</option>
+                                <option value="Satisfied">Satisfied</option>
+                                <option value="Happy" selected>Happy</option>
+                                <option value="very well!!">very well!!</option>
+                            </select></p>
+                        <p class="submit"><button type="submit"><a href="../main.html">Submit</a></button></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

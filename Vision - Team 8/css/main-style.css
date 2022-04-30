@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* body styling */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(27, 132, 158);
+    background-image: url('../carousel images/notext.png');
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+/* header styling */
+
+body header {
+    background-color: rgba(0, 0, 0, 0.659);
+    height: 75px;
+    align-items: center;
+    color: white;
+    display: flex;
+}
+
+
+/* header navigation bar */
+
+body .header_sec .header .headgenres {
+    display: inline;
+    float: left;
+}
+
+
+/* header navigatio list */
+
+body .header_sec .header .headgenres ul {
+    display: flex;
+}
+
+
+/* menu drop down button for mobile view */
+
+.menu-dropdown {
+    display: none;
+}
+
+
+/* header navigation list item */
+
+body .header_sec .header .headgenres ul li {
+    display: inline;
+    padding: 10px;
+}
+
+
+/* header navigation list item inner link */
+
+body .header_sec .header .headgenres ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* header navogation list item link hover  */
+
+body .header_sec .header .headgenres ul li a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+
+/* header right side search bar and user icon */
+
+body .header_sec .header .headerrightside {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    float: right;
+    margin-left: 15%;
+    align-items: center;
+}
+
+body .header_sec .header .headerrightside div {
+    padding: 10px;
+    padding-top: 5px;
+}
+
+
+/* header search bar */
+
+body .header_sec .header .headerrightside input[type=search] {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    padding: 8px;
+    width: 250px;
+    outline: none;
+    border: none;
+}
+
+body .header_sec .header .headerrightside div a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+body .header_sec .header .headerrightside .useroptions {
+    right: 0px;
+    width: 150px;
+    padding: 12px;
+    display: none;
+    line-height: 2rem;
+    margin-top: 10px;
+    position: absolute;
+    border-radius: 15px;
+    border: black 2px solid;
+    background-color: white;
+    box-shadow: white 0 0 10px;
+}
+
+body .header_sec .header .headerrightside .useroptions a {
+    color: black;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+body .header_sec .header .headerrightside .useroptions a:hover {
+    text-decoration: black underline;
+}
+
+body .header_sec .header .headerrightside .usericon:hover .useroptions {
+    display: inherit;
+}
+
+
+/* back to top button styling */
+
+.topbtn {
+    right: 20px;
+    padding: 7px;
+    border: none;
+    bottom: 20px;
+    display: none;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    font-size: xx-large;
+    background-color: red;
+}
+
+
+/* main body styling */
+
+
+/* introductory image section styling */
+
+body .disp-img {
+    margin: 1%;
+    display: flex;
+    overflow: auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/* introductroy image styling */
+
+body .disp-img img {
+    margin: 9%;
+    box-shadow: black 2px 2px 2px 0;
+    border-radius: 25px;
+    margin-bottom: 0;
+    margin-top: 0.5%;
+    width: 80%;
+    height: 80%;
+    background-attachment: fixed;
+}
+
+
+/* books section styling part */
+
+.main_sec .genre_books {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.main_sec .section .book {
+    width: 162px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.7s;
+}
+
+
+/* transform book cover image and scale it on hover */
+
+.section .book:hover img {
+    transform: scale(1.2) translateY(-15px);
+}
+
+.main_sec .section .book a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* underline book name on hover  */
+
+.main_sec .section .book a:hover {
+    color: black;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+    text-decoration: underline yellow 1px;
+}
+
+.main_sec .section .book img {
+    width: 160px;
+    height: 230px;
+    padding: 20px;
+    transition: all 0.7s;
+}
+
+.main_sec .genre {
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+
+/* footer seaction styling part */
+
+.footer_sec {
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    color: white;
+    margin-top: 70px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(42, 6, 53);
+    background-color: rgba(0, 0, 0, 0.659);
+}
+
+.footer_sec p {
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* footer link styling */
+
+.footer_sec p a {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline 1px white;
+}

@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* back to top button styling */
+
+.topbtn {
+    right: 20px;
+    padding: 7px;
+    border: none;
+    bottom: 20px;
+    display: none;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    font-size: xx-large;
+    background-color: red;
+}
+
+
+/* body styling */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(27, 132, 158);
+    background-image: url('carousel images/notext.png');
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body header {
+    background-color: rgba(0, 0, 0, 0.659);
+    height: 75px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    display: grid;
+}
+
+.visionHomelink {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+iframe {
+    overflow: hidden;
+}
+
+.ytvideo:hover iframe {
+    padding: 10px;
+    border-radius: 0.5em;
+    transition: all 0.2s;
+    transform: scale(1.2);
+    background-color: white;
+    backdrop-filter: blur(50px);
+    box-shadow: black 0 0 2px 1px, white 0px 0px 150px;
+}
+
+
+/* footer seaction styling part */
+
+.footer_sec {
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(42, 6, 53);
+    background-color: rgba(0, 0, 0, 0.659);
+}
+
+.footer_sec p {
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* footer link styling */
+
+.footer_sec p a {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline 1px white;
+}

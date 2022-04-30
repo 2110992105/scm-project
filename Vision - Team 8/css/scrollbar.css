@@ -1,0 +1,29 @@
+* {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.868);
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.668);
+}
+
+@media only screen and (max-width: 600px) {
+     ::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+    }
+     ::-webkit-scrollbar:horizontal {
+        height: 6px;
+        background-color: rgba(0, 0, 0, 0.668);
+    }
+}
